@@ -104,11 +104,16 @@
     nav ul {
         display: flex;
     }
+.cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
+    }
     }
     article {
         grid-area: main;
     }
-    aside {
+   /* aside {
         display: sidebar;
     }
     main {
@@ -118,4 +123,9 @@
         display: grid;
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         gap: 20px;
+    }*/
+ .title {
+      text-shadow: #000 2px 5px 1px,
+      #000 2px 5px 1px,
+      #02ffdd 0px 0px 10px;
     }
