@@ -1,5 +1,6 @@
 * {
         box-sizing: border-box;
+        background: linear-gradient(to right, #02ffdd, #2c8a9d);
       }
 
       html {
@@ -137,5 +138,6 @@ a:link {
         text-decoration: none;
         color: white;
             }
+
 
 
