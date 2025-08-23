@@ -1,0 +1,121 @@
+* {
+        box-sizing: border-box;
+      }
+
+      html {
+        font:
+          1.2em/1.4 Arial,
+          Helvetica,
+          sans-serif;
+      }
+
+      body {
+        padding: 0 0 1em;
+      }
+
+      header {
+        background-color: #2C8A9D;
+        color: #fff;
+        border: 5px solid #2C8A9D;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+        width: 100%;
+      }
+
+      header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      header a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 1em;
+      }
+
+      header .title {
+        font-size: 150%;
+        font-style: italic;
+        font-weight: bold;
+        padding: 1em;
+      }
+
+      main {
+        padding: 0 1em;
+      }
+
+      .cards {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .cards li {
+        border: 5px solid #2C8A9D;
+        margin-bottom: 1em;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .cards p:last-child {
+        background-color: #2C8A9D;
+        color: #fff;
+        margin: 0;
+        padding: 0.5em 1em;
+        border-radius: 10px;
+      }
+
+      .cards .inner {
+        padding: 0.5em 1em;
+      }
+      img { max-width: 100%; height: auto; }
+
+      .sidebar {
+        background-color: #2C8A9D;
+        border: 5px solid #2C8A9D;
+        padding: 0.5em 1em;
+        color: #fff;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+      }
+
+      @media screen and (min-width: 40em) {
+      .wrapper {
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "main sidebar"
+        "footer footer";
+        grid-template-columns: 4fr 1fr;
+        gap: 20px;
+    }
+    header {
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    nav ul {
+        display: flex;
+    }
+    }
+    article {
+        grid-area: main;
+    }
+    aside {
+        display: sidebar;
+    }
+    main {
+        display: grid;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        gap: 20px;
+    }
