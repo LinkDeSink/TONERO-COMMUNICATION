@@ -86,7 +86,7 @@
         display: grid;
         grid-template-areas:
         "header header"
-        "main sidebar"
+        "main main"
         "footer footer";
         grid-template-columns: 4fr 1fr;
         gap: 20px;
@@ -109,10 +109,14 @@
         grid-template-columns: repeat(3, minmax(200px, 1fr));
         gap: 20px;
     }
+footer {
+        grid-area: footer;
     }
-    article {
+ section.middle {
         grid-area: main;
     }
+    }
+   
    /* aside {
         display: sidebar;
     }
@@ -129,3 +133,9 @@
       #000 2px 5px 1px,
       #02ffdd 0px 0px 10px;
     }
+a:link { 
+        text-decoration: none;
+        color: white;
+            }
+
+
